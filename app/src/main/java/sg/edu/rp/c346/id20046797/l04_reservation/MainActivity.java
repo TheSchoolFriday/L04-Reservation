@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String finalToast = "Required Fields are Empty.";
-                if (!(etName.getText().toString() == "" && etPax.getText().toString() == "" && etMobileNumber.getText().toString() == "")) {
+                if (!(etName.getText().toString().isEmpty() || etPax.getText().toString().isEmpty() || etMobileNumber.getText().toString().isEmpty())) {
                     String nameOfCustomer = etName.getText().toString();
                     String paxOfCustomer = etPax.getText().toString();
                     String mobileNumber = etMobileNumber.getText().toString();
